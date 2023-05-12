@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Apr 27 14:09:56 2023
+# Process ID: 17536
+# Current directory: C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/zynq_processor_processing_system7_0_0_synth_1
+# Command line: vivado.exe -log zynq_processor_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zynq_processor_processing_system7_0_0.tcl
+# Log file: C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/zynq_processor_processing_system7_0_0_synth_1/zynq_processor_processing_system7_0_0.vds
+# Journal file: C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/zynq_processor_processing_system7_0_0_synth_1\vivado.jou
+# Running On: LAPTOP-UAA2KK37, OS: Windows, CPU Frequency: 1992 MHz, CPU Physical cores: 4, Host memory: 17022 MB
+#-----------------------------------------------------------
+source zynq_processor_processing_system7_0_0.tcl -notrace

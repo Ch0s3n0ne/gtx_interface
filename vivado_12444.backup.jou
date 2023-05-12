@@ -1,0 +1,370 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sat May  6 17:29:22 2023
+# Process ID: 12444
+# Current directory: C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10908 C:\Users\huhug\FPGA_workspace\Doutoramento\ZC706_start\GTX_implementation_tests\OTHER\gtwizard_0_ex\gtwizard_0_ex.xpr
+# Log file: C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/vivado.log
+# Journal file: C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex\vivado.jou
+# Running On: LAPTOP-UAA2KK37, OS: Windows, CPU Frequency: 1992 MHz, CPU Physical cores: 4, Host memory: 17022 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/top_input_clock.bit {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_269Vpp.bit}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/top_input_clock.bit {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_336Vpp.bit}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+launch_simulation
+open_wave_config C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_TB_behav.wcfg
+source tb_top_input_clock.tcl
+run 12 us
+relaunch_sim
+save_wave_config {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_TB_behav.wcfg}
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+open_wave_config C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_TB_behav.wcfg
+source tb_top_input_clock.tcl
+run 12 us
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+open_wave_config C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_TB_behav.wcfg
+source tb_top_input_clock.tcl
+run 12 us
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_sim
+file copy -force C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/top_input_clock.bit {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_543Vpp.bit}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/top_input_clock.bit {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_269Vpp.bit}
+delete_ip_run [get_files -of_objects [get_fileset gtwizard_0] C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci]
+set_property generate_synth_checkpoint false [get_files  C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci]
+generate_target all [get_files  C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci]
+export_ip_user_files -of_objects [get_files C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci] -directory C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.ip_user_files -ipstatic_source_dir C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.cache/compile_simlib/modelsim} {questa=C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.cache/compile_simlib/questa} {riviera=C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.cache/compile_simlib/riviera} {activehdl=C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/top_input_clock.bit {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_336Vpp.bit}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/top_input_clock.bit {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_269Vpp.bit}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+file copy -force C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/top_input_clock.bit {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_543Vpp.bit}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/top_input_clock.bit {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_609Vpp.bit}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/top_input_clock.bit {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_866Vpp.bit}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/top_input_clock.bit {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_924Vpp.bit}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/top_input_clock.bit {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_1_092Vpp.bit}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/top_input_clock.bit {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_1_119Vpp.bit}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+launch_simulation
+open_wave_config C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_TB_behav.wcfg
+source tb_top_input_clock.tcl
+run 12 us
+close_sim
+file copy -force C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/top_input_clock.bit {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/100M_0_269Vpp.bit}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/top_input_clock.bit {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/100M_0_543Vpp.bit}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/top_input_clock.bit {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/100M_0_866Vpp.bit}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/top_input_clock.bit {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/1ns_10M_0_269Vpp.bit}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/top_input_clock.bit {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/1ns_10M_0_543Vpp.bit}
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/top_input_clock.bit} [get_hw_devices xc7z045_1]
+current_hw_device [get_hw_devices xc7z045_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_924Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_336Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_1_092Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_1_119Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/100M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/100M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/100M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/100M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/100M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_609Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_924Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/100M_0_866Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/1ns_10M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/1ns_10M_0_543Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_1_119Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/100M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/1ns_10M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_hw_manager
+write_hw_platform -fixed -force -file {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/sxa files/I2C_SI5324_config_without_bitstream.xsa}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/top_input_clock.bit {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/100ns_10M_0_269Vpp.bit}
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/1ns_10M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+current_hw_device [get_hw_devices xc7z045_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_336Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_543Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_609Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_866Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_0_924Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_1_092Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10M_1_119Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/100M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/100M_0_543Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/100M_0_866Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/1ns_10M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/1ns_10M_0_543Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z045_1]
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10ns_10M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+program_hw_devices [get_hw_devices xc7z045_1]
+refresh_hw_device [lindex [get_hw_devices xc7z045_1] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/top_input_clock.bit {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10ns_10M_0_269Vpp.bit}

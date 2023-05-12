@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../gtwizard_0_ex.gen/sources_1/ip/rx_gtwizard_0/rx_gtwizard_0/example_design/support/rx_gtwizard_0_common.vhd" \
+"../../../../../gtwizard_0_ex.gen/sources_1/ip/rx_gtwizard_0/rx_gtwizard_0/example_design/support/rx_gtwizard_0_common_reset.vhd" \
+"../../../../../gtwizard_0_ex.gen/sources_1/ip/rx_gtwizard_0/rx_gtwizard_0/example_design/rx_gtwizard_0_exdes.vhd" \
+"../../../../../gtwizard_0_ex.gen/sources_1/ip/rx_gtwizard_0/rx_gtwizard_0/example_design/rx_gtwizard_0_gt_frame_check.vhd" \
+"../../../../../gtwizard_0_ex.gen/sources_1/ip/rx_gtwizard_0/rx_gtwizard_0/example_design/support/rx_gtwizard_0_gt_usrclk_source.vhd" \
+"../../../../../gtwizard_0_ex.gen/sources_1/ip/rx_gtwizard_0/rx_gtwizard_0/example_design/support/rx_gtwizard_0_support.vhd" \
+"../../../../../gtwizard_0_ex.srcs/sim_1/imports/simulation/sim_reset_gt_model.vhd" \
+"../../../../../gtwizard_0_ex.srcs/sim_1/imports/simulation/gtwizard_0_tb.vhd" \
+
+# Do not sort compile order
+nosort

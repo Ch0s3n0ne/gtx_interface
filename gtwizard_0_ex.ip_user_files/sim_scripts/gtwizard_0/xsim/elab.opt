@@ -1,0 +1,1 @@
+--incr --debug typical --relax --mt auto -L xil_defaultlib -L xilinx_vip -L secureip -L xpm --snapshot gtwizard_0 xil_defaultlib.gtwizard_0 -log elaborate.log

@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "axi_infrastructure_v1_1_0" -L "axi_vip_v1_1_11" -L "processing_system7_vip_v1_0_13" -L "uvm" -L "xilinx_vip" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "tb_top_input_clock_behav" "xil_defaultlib.tb_top_input_clock" "xil_defaultlib.glbl" -log "elaborate.log" 

@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"tb_top_input_clock_func_impl.vhd" \
+"../../../../../gtwizard_0_ex.srcs/sim_1/new/tb_top_input_clock.vhd" \
+
+# Do not sort compile order
+nosort

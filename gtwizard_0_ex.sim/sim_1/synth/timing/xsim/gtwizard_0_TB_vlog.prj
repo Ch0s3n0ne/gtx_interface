@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"gtwizard_0_TB_time_synth.v" \
+"../../../../../gtwizard_0_ex.gen/sources_1/ip/rx_gtwizard_0/rx_gtwizard_0_sim_netlist.v" \
+
+# Do not sort compile order
+nosort

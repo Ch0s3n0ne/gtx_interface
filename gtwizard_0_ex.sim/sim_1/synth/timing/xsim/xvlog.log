@@ -1,0 +1,33 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.sim/sim_1/synth/timing/xsim/gtwizard_0_TB_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gtwizard_0
+INFO: [VRFC 10-311] analyzing module gtwizard_0_GT
+INFO: [VRFC 10-311] analyzing module gtwizard_0_GT_FRAME_GEN
+INFO: [VRFC 10-311] analyzing module gtwizard_0_GT_USRCLK_SOURCE
+INFO: [VRFC 10-311] analyzing module gtwizard_0_TX_STARTUP_FSM
+INFO: [VRFC 10-311] analyzing module gtwizard_0_common
+INFO: [VRFC 10-311] analyzing module gtwizard_0_cpll_railing
+INFO: [VRFC 10-311] analyzing module gtwizard_0_exdes
+INFO: [VRFC 10-311] analyzing module gtwizard_0_init
+INFO: [VRFC 10-311] analyzing module gtwizard_0_multi_gt
+INFO: [VRFC 10-311] analyzing module gtwizard_0_support
+INFO: [VRFC 10-311] analyzing module gtwizard_0_sync_block
+INFO: [VRFC 10-311] analyzing module gtwizard_0_sync_block_0
+INFO: [VRFC 10-311] analyzing module gtwizard_0_sync_block_1
+INFO: [VRFC 10-311] analyzing module gtwizard_0_sync_block_2
+INFO: [VRFC 10-311] analyzing module gtwizard_0_sync_block_3
+INFO: [VRFC 10-311] analyzing module gtwizard_0_sync_block_4
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.gen/sources_1/ip/rx_gtwizard_0/rx_gtwizard_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rx_gtwizard_0
+INFO: [VRFC 10-311] analyzing module rx_gtwizard_0_GT
+INFO: [VRFC 10-311] analyzing module rx_gtwizard_0_RX_STARTUP_FSM
+INFO: [VRFC 10-311] analyzing module rx_gtwizard_0_cpll_railing
+INFO: [VRFC 10-311] analyzing module rx_gtwizard_0_init
+INFO: [VRFC 10-311] analyzing module rx_gtwizard_0_multi_gt
+INFO: [VRFC 10-311] analyzing module rx_gtwizard_0_sync_block
+INFO: [VRFC 10-311] analyzing module rx_gtwizard_0_sync_block_0
+INFO: [VRFC 10-311] analyzing module rx_gtwizard_0_sync_block_1
+INFO: [VRFC 10-311] analyzing module rx_gtwizard_0_sync_block_2
+INFO: [VRFC 10-311] analyzing module rx_gtwizard_0_sync_block_3
+INFO: [VRFC 10-311] analyzing module rx_gtwizard_0_sync_block_4
+INFO: [VRFC 10-311] analyzing module rx_gtwizard_0_sync_block_5

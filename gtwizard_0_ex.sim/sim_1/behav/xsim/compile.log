@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.gen/sources_1/ip/gtwizard_0/gtwizard_0_gt.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'gtwizard_0_GT'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'gtwizard_0_exdes'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'gtwizard_0_GT_FRAME_GEN'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_support.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'gtwizard_0_support'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/new/top_input_clock.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_input_clock'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/sim_1/new/tb_top_input_clock.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_top_input_clock'

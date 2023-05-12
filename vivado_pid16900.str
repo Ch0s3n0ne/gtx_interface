@@ -1,0 +1,300 @@
+/*
+
+Xilinx Vivado v2021.2 (64-bit) [Major: 2021, Minor: 2]
+SW Build: 3367213 on Tue Oct 19 02:48:09 MDT 2021
+IP Build: 3369179 on Thu Oct 21 08:25:16 MDT 2021
+
+Process ID (PID): 16900
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue May 09 15:25:28 BST 2023
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	C:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9
+Java executable: 	C:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	huhug
+User home directory: C:/Users/huhug
+User working directory: C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex
+User country: 	PT
+User language: 	pt
+User locale: 	pt_PT
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2021.2
+RDI_DATADIR: C:/Xilinx/Vivado/2021.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2021.2/bin
+
+Vivado preferences file: C:/Users/huhug/AppData/Roaming/Xilinx/Vivado/2021.2/vivado.xml
+Vivado preferences directory: C:/Users/huhug/AppData/Roaming/Xilinx/Vivado/2021.2/
+Vivado layouts directory: C:/Users/huhug/AppData/Roaming/Xilinx/Vivado/2021.2/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2021.2/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/vivado.log
+Vivado journal file: 	C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/vivado.jou
+Engine tmp dir: 	C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/.Xil/Vivado-16900-LAPTOP-UAA2KK37
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2021.2
+XILINX_SDK: C:/Xilinx/Vitis/2021.2
+XILINX_VITIS: C:/Xilinx/Vitis/2021.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2021.2
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,489 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 80 MB (+81443kb) [00:00:14]
+// [Engine Memory]: 1,489 MB (+1409804kb) [00:00:14]
+// Opening Vivado Project: C:\Users\huhug\FPGA_workspace\Doutoramento\ZC706_start\GTX_implementation_tests\OTHER\gtwizard_0_ex\gtwizard_0_ex.xpr. Version: Vivado v2021.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex' 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,489 MB. GUI used memory: 56 MB. Current time: 5/9/23, 3:25:29 PM BST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 109 MB (+26236kb) [00:00:27]
+// WARNING: HEventQueue.dispatchEvent() is taking  3938 ms.
+// Tcl Message: open_project C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:36 ; elapsed = 00:00:16 . Memory (MB): peak = 1529.949 ; gain = 0.000 
+// Project name: gtwizard_0_ex; location: C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex; part: xc7z045ffg900-2
+dismissDialog("Open Project"); // bA
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 121 MB (+6874kb) [00:00:44]
+// Elapsed time: 17 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "Out-of-Context Module Runs ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 2, "Out-of-Context Module Runs", 0, true, false, false, false, true, false); // az - Popup Trigger - Node
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1006 ms. Increasing delay to 3000 ms.
+// [GUI Memory]: 142 MB (+15572kb) [00:00:57]
+// WARNING: HEventQueue.dispatchEvent() is taking  40775 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1425 ms.
+// [GUI Memory]: 150 MB (+1329kb) [00:04:22]
+// Elapsed time: 216 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  2373 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// 'Q' command handler elapsed time: 3 seconds
+dismissDialog("Open Hardware Manager"); // bA
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2021.2   **** Build date : Oct 19 2021 at 03:13:30     ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2021.2.0   ****** Build date   : Sep 27 2021-22:44:20     **** Build number : 2021.2.1632779060       ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 1529.949 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A5501B 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  11019 ms.
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 3251.426 ; gain = 1721.477 
+// TclEventType: HW_DEVICE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,103 MB. GUI used memory: 68 MB. Current time: 5/9/23, 3:30:18 PM BST
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10ns_10M_0_269Vpp.bit} [get_hw_devices xc7z045_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z045_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z045_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7z045 (JTAG device index = 1) is not programmed (DONE status = 0). 
+// Elapsed time: 36 seconds
+dismissDialog("Auto Connect"); // bA
+// [Engine Memory]: 3,111 MB (+1623191kb) [00:05:09]
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A5501B 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,123 MB. GUI used memory: 68 MB. Current time: 5/9/23, 3:33:43 PM BST
+// Elapsed time: 351 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Close Hardware Target"); // o
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A5501B 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 1133 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Close Hardware Target"); // o
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,129 MB. GUI used memory: 67 MB. Current time: 5/9/23, 4:03:44 PM BST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A5501B 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  70806 ms.
+// Elapsed time: 1383 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Close Hardware Target"); // o
+// HMemoryUtils.trashcanNow. Engine heap size: 3,129 MB. GUI used memory: 58 MB. Current time: 5/9/23, 4:33:46 PM BST
+// Elapsed time: 952 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 INFO: [Labtools 27-3414] Connected to existing cs_server. 
+// Tcl Message: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-JTAG-SMT2-210251A5501B" may be locked by another hw_server. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.  Targets(s) ", jsn-JTAG-SMT2-210251A5501B" may be locked by another hw_server.  
+dismissDialog("Auto Connect"); // bA
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,129 MB. GUI used memory: 58 MB. Current time: 5/9/23, 5:03:46 PM BST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 2447 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 INFO: [Labtools 27-3414] Connected to existing cs_server. 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A5501B 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10ns_10M_0_269Vpp.bit} [get_hw_devices xc7z045_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z045_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z045_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7z045 (JTAG device index = 1) is not programmed (DONE status = 0). 
+dismissDialog("Auto Connect"); // bA
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A5501B 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  1160 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  29318 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,129 MB. GUI used memory: 58 MB. Current time: 5/9/23, 5:33:50 PM BST
+// WARNING: HEventQueue.dispatchEvent() is taking  1077 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1857476 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,129 MB. GUI used memory: 57 MB. Current time: 5/9/23, 6:11:20 PM BST
+// WARNING: HEventQueue.dispatchEvent() is taking  2094 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2382 ms. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7598 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,129 MB. GUI used memory: 57 MB. Current time: 5/9/23, 11:20:12 PM BST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2040 ms. Increasing delay to 6120 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6728 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4978 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1628 ms.

@@ -1,0 +1,92 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue May  9 15:24:45 2023
+# Process ID: 16900
+# Current directory: C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18952 C:\Users\huhug\FPGA_workspace\Doutoramento\ZC706_start\GTX_implementation_tests\OTHER\gtwizard_0_ex\gtwizard_0_ex.xpr
+# Log file: C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/vivado.log
+# Journal file: C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex\vivado.jou
+# Running On: LAPTOP-UAA2KK37, OS: Windows, CPU Frequency: 1992 MHz, CPU Physical cores: 4, Host memory: 17022 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex'
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+open_project: Time (s): cpu = 00:00:36 ; elapsed = 00:00:16 . Memory (MB): peak = 1529.949 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.2
+  **** Build date : Oct 19 2021 at 03:13:30
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.2.0
+  ****** Build date   : Sep 27 2021-22:44:20
+    **** Build number : 2021.2.1632779060
+      ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 1529.949 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A5501B
+open_hw_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 3251.426 ; gain = 1721.477
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10ns_10M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+current_hw_device [get_hw_devices xc7z045_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z045_1] 0]
+INFO: [Labtools 27-1435] Device xc7z045 (JTAG device index = 1) is not programmed (DONE status = 0).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A5501B
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A5501B
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z045 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A5501B
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A5501B
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z045 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A5501B
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-JTAG-SMT2-210251A5501B" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A5501B
+set_property PROGRAM.FILE {C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/bit files/10ns_10M_0_269Vpp.bit} [get_hw_devices xc7z045_1]
+current_hw_device [get_hw_devices xc7z045_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z045_1] 0]
+INFO: [Labtools 27-1435] Device xc7z045 (JTAG device index = 1) is not programmed (DONE status = 0).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A5501B
