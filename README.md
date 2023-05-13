@@ -60,7 +60,7 @@ The main variables to keep in mind here are:
 
 This project is structured as follows:
 
-### [top_input_clock.vhd](gtwizard_0_ex.srcs\sources_1\new\top_input_clock.vhd) : 
+### [top_input_clock.vhd](\gtwizard_0_ex.srcs\sources_1\new\top_input_clock.vhd) : 
 
 This is the top level module of the VHDL code. In this file the interface for the GTX transceiver is instantiated 'gtwizard_0_main'. The most important parameter in this instantiation is "EXAMPLE_WORDS_IN_BRAM". The number placed here should be equal to the number of lines used to define the bit sequence.
 
