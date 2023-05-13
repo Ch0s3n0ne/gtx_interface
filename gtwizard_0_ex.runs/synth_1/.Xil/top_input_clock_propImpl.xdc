@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/constrs_1/new/real_constraints.xdc rfile:../../../gtwizard_0_ex.srcs/constrs_1/new/real_constraints.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.srcs/constrs_1/new/real_constraints.xdc rfile:../../../gtwizard_0_ex.srcs/constrs_1/new/real_constraints.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:15 export:INPUT save:INPUT read:READ} [current_design]
 set_property LOC Y2 [get_ports TXP_OUT]
 set_property src_info {type:XDC file:1 line:16 export:INPUT save:INPUT read:READ} [current_design]

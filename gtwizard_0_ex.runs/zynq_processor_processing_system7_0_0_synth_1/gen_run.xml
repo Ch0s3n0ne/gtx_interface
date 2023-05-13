@@ -34,7 +34,7 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
     <Filter Type="Utils"/>
-    <File Path="$PPRDIR/../../../GTX_Implementation_test/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/utils_1/imports/synth_1/gtwizard_0_exdes.dcp">
+    <File Path="$PPRDIR/../ZC706_start/GTX_Implementation_test/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/utils_1/imports/synth_1/gtwizard_0_exdes.dcp">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

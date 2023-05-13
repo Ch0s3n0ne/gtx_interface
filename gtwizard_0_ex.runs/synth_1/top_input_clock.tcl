@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/synth_1/top_input_clock.tcl"
+  variable script "C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.runs/synth_1/top_input_clock.tcl"
   variable category "vivado_synth"
 }
 
@@ -77,33 +77,33 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.cache/wt [current_project]
-set_property parent.project_path C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.cache/wt [current_project]
+set_property parent.project_path C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part xilinx.com:zc706:part0:1.4 [current_project]
-set_property ip_output_repo c:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.cache/ip [current_project]
+set_property ip_output_repo c:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_mem C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gt_rom_init_tx.dat
+read_mem C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.srcs/sources_1/imports/example_design/gt_rom_init_tx.dat
 read_vhdl -library xil_defaultlib {
-  C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_common.vhd
-  C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_common_reset.vhd
-  C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.vhd
-  C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_gen.vhd
-  C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_gt_usrclk_source.vhd
-  C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_support.vhd
-  C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.gen/sources_1/bd/zynq_processor/hdl/zynq_processor_wrapper.vhd
-  C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/new/top_input_clock.vhd
+  C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_common.vhd
+  C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_common_reset.vhd
+  C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.vhd
+  C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_gen.vhd
+  C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_gt_usrclk_source.vhd
+  C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_support.vhd
+  C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.gen/sources_1/bd/zynq_processor/hdl/zynq_processor_wrapper.vhd
+  C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.srcs/sources_1/new/top_input_clock.vhd
 }
-add_files C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/bd/zynq_processor/zynq_processor.bd
-set_property used_in_implementation false [get_files -all c:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.gen/sources_1/bd/zynq_processor/ip/zynq_processor_processing_system7_0_0/zynq_processor_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.gen/sources_1/bd/zynq_processor/zynq_processor_ooc.xdc]
+add_files C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.srcs/sources_1/bd/zynq_processor/zynq_processor.bd
+set_property used_in_implementation false [get_files -all c:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.gen/sources_1/bd/zynq_processor/ip/zynq_processor_processing_system7_0_0/zynq_processor_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.gen/sources_1/bd/zynq_processor/zynq_processor_ooc.xdc]
 
-read_ip -quiet C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.gen/sources_1/ip/gtwizard_0/gtwizard_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.gen/sources_1/ip/gtwizard_0/gtwizard_0_ooc.xdc]
+read_ip -quiet C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.gen/sources_1/ip/gtwizard_0/gtwizard_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.gen/sources_1/ip/gtwizard_0/gtwizard_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -114,8 +114,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/constrs_1/new/real_constraints.xdc
-set_property used_in_implementation false [get_files C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.srcs/constrs_1/new/real_constraints.xdc]
+read_xdc C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.srcs/constrs_1/new/real_constraints.xdc
+set_property used_in_implementation false [get_files C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.srcs/constrs_1/new/real_constraints.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

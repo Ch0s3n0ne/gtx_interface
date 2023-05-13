@@ -12,9 +12,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zynq_proces
 # IP: ip/gtwizard_0/gtwizard_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==gtwizard_0 || ORIG_REF_NAME==gtwizard_0} -quiet] -quiet
 
-# XDC: c:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.gen/sources_1/bd/zynq_processor/zynq_processor_ooc.xdc
+# XDC: c:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.gen/sources_1/bd/zynq_processor/zynq_processor_ooc.xdc
 
-# XDC: c:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.gen/sources_1/ip/gtwizard_0/gtwizard_0.xdc
+# XDC: c:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.gen/sources_1/ip/gtwizard_0/gtwizard_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==gtwizard_0 || ORIG_REF_NAME==gtwizard_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.gen/sources_1/ip/gtwizard_0/gtwizard_0_ooc.xdc
+# XDC: c:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.gen/sources_1/ip/gtwizard_0/gtwizard_0_ooc.xdc

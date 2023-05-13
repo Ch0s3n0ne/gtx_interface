@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/huhug/FPGA_workspace/Doutoramento/ZC706_start/GTX_implementation_tests/OTHER/gtwizard_0_ex/gtwizard_0_ex.runs/synth_1'
+HD_PWD='C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

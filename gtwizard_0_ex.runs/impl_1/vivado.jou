@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Fri May 12 15:47:17 2023
+# Process ID: 22012
+# Current directory: C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.runs/impl_1
+# Command line: vivado.exe -log top_input_clock.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_input_clock.tcl -notrace
+# Log file: C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.runs/impl_1/top_input_clock.vdi
+# Journal file: C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.runs/impl_1\vivado.jou
+# Running On: LAPTOP-UAA2KK37, OS: Windows, CPU Frequency: 1992 MHz, CPU Physical cores: 4, Host memory: 17022 MB
+#-----------------------------------------------------------
+source top_input_clock.tcl -notrace
