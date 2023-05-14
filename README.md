@@ -56,11 +56,21 @@ The main variables to keep in mind here are:
 3. TX reference clock(MHz) - Can be selected according to the TX Line Rate (Gbps), 200MHz was chosen because it is already the frequency of the System clock of the FPGA model.
 4. DRP/System Clock Frequency - Not shown here, can also be adapted, in this application we used the default value of 60MHz.
 
+The transceiver connections utilized in this project correspond to the SMA_MGT_TX_P/N present on the ZC706 FPGA. Further details on this connection can be found in the UG954 User Guide. When leveraging this interface, understanding the available options for the reference clock is crucial.
+
+In the Zynq-7000 series SoCs, the GTX transceivers are organized into units known as Quads, comprising four channels each. The reference clock for a Quad can be flexibly sourced from either the Quad above or below the target GTX Quad.
+
+For this particular implementation, to avoid dependency on an external device for clock provision, we elected to utilize the "SI5324_OUT_C_P/N jitter attenuator clock". This device, while not fully integrated into the FPGA architecture, provides the necessary clock signal. However, it does necessitate programming via the I2C interface. To accommodate this requirement within our design, we implemented a Zynq processing core. This additional component allows for efficient control over the Si5324 device, ensuring smooth operation of the system.
+
 ## Project Outline
 
 This project is structured as follows:
 
+<<<<<<< HEAD
+### [top_input_clock.vhd](gtwizard_0_ex.srcs/sources_1/new/top_input_clock.vhd) : 
+=======
 ### [top_input_clock.vhd](\gtwizard_0_ex.srcs\sources_1\new\top_input_clock.vhd) : 
+>>>>>>> b185e5502b310eb072af6edde770267b1292867c
 
 This is the top level module of the VHDL code. In this file the interface for the GTX transceiver is instantiated 'gtwizard_0_main'. The most important parameter in this instantiation is "EXAMPLE_WORDS_IN_BRAM". The number placed here should be equal to the number of lines used to define the bit sequence.
 
@@ -68,8 +78,54 @@ Continuing in this file, we have the instantiation of the Zynq processing core, 
 
 As we delve further into this file, we come across the generation of the necessary clocks to guide the interface. The frequency of these clocks (60MHz and 200MHz) is pre-defined, during the creation of the IP module (7 Series FPGA's Transceivers Wizard). Changing the parameters defined in the module such as the Line RAte (Gbs), could also require changes in the clock generation process.
 
-Each of these elements plays an integral role in the system, contributing to its high-s
+### [gtwizard_0_gt_frame_gen.vh](gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_gen.vhd) : 
 
+This is the file where the bitstream is specified. There are two key factors to consider when constructing the bitstream:
+
+1. Each line of the bitstream should comprise 16 bits.
+2. The duration of each bit, which is determined by the TX rate. For instance, a TX rate of 2.0Gbs corresponds to a bit duration of 0.5ns.
+
+The bitstream should be structured as follows:
+
+```vhdl
+constant ROM_VALUES : RomType := (
+
+    "1111111111111111",
+    "1111111111111111",
+    "1111111111111111",
+    "1111111111111111",
+    "1111111111111111",
+    "1111111111111111",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000",
+    "0000000000000000"
+
+);
+```
+
+
+
+In this example, a pulse frequency of 10.416MHz is achieved as each bit has a duration of 0.5ns. Once the transceiver transmits the last line, it cycles back to the beginning.
+
+To modify the number of lines in the pulse, you need to make the following changes:
+
+In the bitstream file, adjust the RomType array:
+
+```vhdl
+type RomType is array(0 to X) of std_logic_vector(15 downto 0);
+```
+Here, "X" should be replaced with the number of desired lines minus one.
+
+Also modify the **WORDS_IN_BRAM** integer:
+
+```vhdl
+WORDS_IN_BRAM : integer    :=   Y
+```
+
+Here, "Y" should be replaced with your desired number of lines.
 
 
 - `filename2.vhd`: (Provide a brief explanation of what this file does in your project)
