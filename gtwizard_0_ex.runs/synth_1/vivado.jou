@@ -2,8 +2,8 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Fri May 12 14:57:02 2023
-# Process ID: 11236
+# Start of session at: Sun May 14 01:16:19 2023
+# Process ID: 17864
 # Current directory: C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.runs/synth_1
 # Command line: vivado.exe -log top_input_clock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_input_clock.tcl
 # Log file: C:/Users/huhug/FPGA_workspace/Doutoramento/gtx_interface/gtwizard_0_ex.runs/synth_1/top_input_clock.vds

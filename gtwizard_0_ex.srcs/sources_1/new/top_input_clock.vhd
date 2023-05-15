@@ -105,7 +105,7 @@ begin
         (
             EXAMPLE_CONFIG_INDEPENDENT_LANES       => 1,
             EXAMPLE_LANE_WITH_START_CHAR            =>   0,    -- specifies lane with unique start frame ch
-            EXAMPLE_WORDS_IN_BRAM                   =>   12,  -- specifies amount of data in BRAM
+            -- EXAMPLE_WORDS_IN_BRAM                   =>   12,  -- specifies amount of data in BRAM
             EXAMPLE_SIM_GTRESET_SPEEDUP             =>   "TRUE",    -- simulation setting for GT SecureIP model
             STABLE_CLOCK_PERIOD                     =>   16,
             EXAMPLE_USE_CHIPSCOPE                   =>   0           -- Set to 1 to use Chipscope to drive resets

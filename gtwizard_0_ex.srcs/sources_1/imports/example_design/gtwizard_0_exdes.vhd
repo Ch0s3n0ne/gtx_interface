@@ -76,7 +76,7 @@ generic
 (
     EXAMPLE_CONFIG_INDEPENDENT_LANES        : integer   := 1;
     EXAMPLE_LANE_WITH_START_CHAR            : integer   := 0;    -- specifies lane with unique start frame ch
-    EXAMPLE_WORDS_IN_BRAM                   : integer   := 12;  -- specifies amount of data in BRAM
+    -- EXAMPLE_WORDS_IN_BRAM                   : integer   := 12;  -- specifies amount of data in BRAM
     EXAMPLE_SIM_GTRESET_SPEEDUP             : string    := "TRUE";    -- simulation setting for GT SecureIP model
     STABLE_CLOCK_PERIOD                     : integer   := 16; 
     EXAMPLE_USE_CHIPSCOPE                   : integer   := 0           -- Set to 1 to use Chipscope to drive resets
@@ -615,10 +615,6 @@ elsif (gt0_txusrclk2_i'event and gt0_txusrclk2_i = '1') then
     -- of your control and alignment characters.
 
     gt0_frame_gen : gtwizard_0_GT_FRAME_GEN
-    generic map
-    (
-        WORDS_IN_BRAM                   =>      EXAMPLE_WORDS_IN_BRAM
-    )
     port map
     (
         -- User Interface
