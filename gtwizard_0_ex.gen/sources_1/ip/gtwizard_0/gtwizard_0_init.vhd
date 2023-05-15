@@ -75,6 +75,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity gtwizard_0_init is
 generic
 (
+    TXDIFFCTRL_CONFIG         : std_logic_vector(3 downto 0) := "0000";
     EXAMPLE_SIM_GTRESET_SPEEDUP             : string    := "TRUE";     -- simulation setting for GT SecureIP model
     EXAMPLE_SIMULATION                      : integer   := 0;          -- Set to 1 for simulation
     USE_BUFG                        : integer   := 0;          -- Set to 1 for bufg usage for cpll railing logic
@@ -162,6 +163,7 @@ component gtwizard_0_multi_gt
 generic
 (
     -- Simulation attributes
+    TXDIFFCTRL_CONFIG         : std_logic_vector(3 downto 0) := "0000";
     USE_BUFG                        : integer   := 0;          -- Set to 1 for bufg usage for cpll railing logic
     WRAPPER_SIM_GTRESET_SPEEDUP    : string    := "FALSE" -- Set to "TRUE" to speed up sim reset
 
@@ -408,7 +410,8 @@ begin
 
     gtwizard_0_i : gtwizard_0_multi_gt
     generic map
-    (
+    ( 
+        TXDIFFCTRL_CONFIG               =>      TXDIFFCTRL_CONFIG,
         USE_BUFG                        =>      USE_BUFG,
         WRAPPER_SIM_GTRESET_SPEEDUP     =>      EXAMPLE_SIM_GTRESET_SPEEDUP
     )

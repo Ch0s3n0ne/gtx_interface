@@ -74,8 +74,10 @@ use UNISIM.VCOMPONENTS.ALL;
 entity gtwizard_0_support is
 generic
 (
+    TXDIFFCTRL_CONFIG         : std_logic_vector(3 downto 0) := "0000";
     EXAMPLE_SIM_GTRESET_SPEEDUP             : string    := "TRUE";     -- simulation setting for GT SecureIP model
     STABLE_CLOCK_PERIOD                     : integer   := 16  
+
 
 );
 port
@@ -148,7 +150,9 @@ attribute DowngradeIPIdentifiedWarnings of RTL : architecture is "yes";
 --**************************Component Declarations*****************************
 
 component gtwizard_0
- 
+generic(
+    TXDIFFCTRL_CONFIG         : std_logic_vector(3 downto 0) := "0000"
+);
 port
 (
     SYSCLK_IN                               : in   std_logic;
@@ -436,6 +440,10 @@ sysclk_in_i <= sysclk_in;
 
 
     gtwizard_0_init_i : gtwizard_0
+    generic map (
+        TXDIFFCTRL_CONFIG => TXDIFFCTRL_CONFIG
+
+    )
     port map
     (
         sysclk_in                       =>      sysclk_in_i,

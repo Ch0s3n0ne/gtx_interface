@@ -70,6 +70,9 @@ use UNISIM.VCOMPONENTS.ALL;
 
 --***************************** Entity Declaration ****************************
 entity gtwizard_0 is
+generic(    TXDIFFCTRL_CONFIG         : std_logic_vector(3 downto 0) := "0000"
+
+);
 port
 (
     SYSCLK_IN                               : in   std_logic;
@@ -150,6 +153,7 @@ architecture RTL of gtwizard_0 is
 component gtwizard_0_init 
 generic
 (
+    TXDIFFCTRL_CONFIG         : std_logic_vector(3 downto 0) := "0000";
     EXAMPLE_SIM_GTRESET_SPEEDUP             : string    := "TRUE";     -- simulation setting for GT SecureIP model
     EXAMPLE_SIMULATION                      : integer   := 0;          -- Set to 1 for simulation
     USE_BUFG                        : integer   := 0;          -- Set to 1 for bufg usage for cpll railing logic
@@ -230,7 +234,8 @@ end component;
 begin
     U0 : gtwizard_0_init
     generic map
-(
+(       
+        TXDIFFCTRL_CONFIG             => TXDIFFCTRL_CONFIG ,
         EXAMPLE_SIM_GTRESET_SPEEDUP   => "TRUE",
         EXAMPLE_SIMULATION            => 0,
  

@@ -37,6 +37,9 @@ use UNISIM.vcomponents.all;
 --use UNISIM.VComponents.all;
 
 entity top_input_clock is
+    generic(
+        TXDIFFCTRL_CONFIG         : std_logic_vector(3 downto 0) := "1000"
+    );
     Port ( SYSCLK_P : in STD_LOGIC;
            SYSCLK_N : in STD_LOGIC;
            SI5324_OUT_C_P : in std_logic;
@@ -102,7 +105,8 @@ begin
 
     gtwizard_0_main :  entity work.gtwizard_0_exdes(RTL) 
         generic map 
-        (
+        (   
+            TXDIFFCTRL_CONFIG                      => TXDIFFCTRL_CONFIG,
             EXAMPLE_CONFIG_INDEPENDENT_LANES       => 1,
             EXAMPLE_LANE_WITH_START_CHAR            =>   0,    -- specifies lane with unique start frame ch
             -- EXAMPLE_WORDS_IN_BRAM                   =>   12,  -- specifies amount of data in BRAM
@@ -162,10 +166,10 @@ begin
         CLKFBOUT_MULT_F => 3.0, -- Multiply value for all CLKOUT (2.000-64.000).
         CLKFBOUT_PHASE => 0.0, -- Phase offset in degrees of CLKFB (-360.000-360.000).
         CLKIN1_PERIOD => 5.0, -- Input clock period in ns to ps resolution (i.e. 33.333 is 30 MHz).
-       -- CLKOUT0_DIVIDE => 10, -- Divide amount for CLKOUT0 (1-128) to get 60 MHz output clock
+       -- CLKOUT0_DIVIDE => 10, 
         CLKOUT1_DIVIDE => 1, 
         CLKOUT2_DIVIDE => 10, -- Divide amount for CLKOUT0 (1-128) to get 60 MHz output clock
-        CLKOUT3_DIVIDE => 3,
+        CLKOUT3_DIVIDE => 3,  -- Divide amount for CLKOUT0 (1-128) to get 2000 MHz output clock
         CLKOUT4_DIVIDE => 1,
         CLKOUT5_DIVIDE => 1,
         CLKOUT6_DIVIDE => 1,

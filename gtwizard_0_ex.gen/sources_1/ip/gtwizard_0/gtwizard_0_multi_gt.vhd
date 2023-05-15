@@ -74,6 +74,7 @@ entity gtwizard_0_multi_gt is
 generic
 (
     -- Simulation attributes
+    TXDIFFCTRL_CONFIG         : std_logic_vector(3 downto 0) := "0000";
     WRAPPER_SIM_GTRESET_SPEEDUP     : string     :=  "FALSE";        -- Set to "TRUE" to speed up sim reset
     RX_DFE_KL_CFG2_IN               : bit_vector :=  X"301148AC";
     USE_BUFG                        : integer   := 0;          -- Set to 1 for bufg usage for cpll railing logic
@@ -185,6 +186,7 @@ component gtwizard_0_GT
 generic
 (
     -- Simulation attributes
+    TXDIFFCTRL_CONFIG         : std_logic_vector(3 downto 0) := "0000";
     GT_SIM_GTRESET_SPEEDUP       : string   := "FALSE";
     RX_DFE_KL_CFG2_IN            : bit_vector :=   X"3010D90C";
     PMA_RSV_IN                   : bit_vector :=   X"00000000";
@@ -292,6 +294,7 @@ gt0_gtwizard_0_i : gtwizard_0_GT
     generic map
     (
         -- Simulation attributes
+        TXDIFFCTRL_CONFIG         => TXDIFFCTRL_CONFIG,
         GT_SIM_GTRESET_SPEEDUP        =>  WRAPPER_SIM_GTRESET_SPEEDUP,
         RX_DFE_KL_CFG2_IN             =>  RX_DFE_KL_CFG2_IN,
         SIM_CPLLREFCLK_SEL            =>  "010",

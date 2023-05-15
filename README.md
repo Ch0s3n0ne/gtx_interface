@@ -68,13 +68,46 @@ This project is structured as follows:
 
 ### [top_input_clock.vhd](gtwizard_0_ex.srcs/sources_1/new/top_input_clock.vhd) : 
 
-This is the top level module of the VHDL code. In this file the interface for the GTX transceiver is instantiated 'gtwizard_0_main'. The most important parameter in this instantiation is "EXAMPLE_WORDS_IN_BRAM". The number placed here should be equal to the number of lines used to define the bit sequence.
+This is the top level module of the VHDL code. In this file the interface for the GTX transceiver is instantiated 'gtwizard_0_main'.
+
+At the start of the file we can define the voltage swing at the interface output:
+
+```vhdl
+generic(
+    TXDIFFCTRL_CONFIG         : std_logic_vector(3 downto 0) := "X"
+);
+```
+
+Here we can replace X by one of the following combinations, ([UG476](https://docs.xilinx.com/v/u/en-US/ug476_7Series_Transceivers)) :
+
+| [3:0]   	| VPPD  	|
+|---------	|-------	|
+| 4'b0000 	| 0.269 	|
+| 4'b0001 	| 0.336 	|
+| 4'b0010 	| 0.407 	|
+| 4'b0011 	| 0.474 	|
+| 4'b0100 	| 0.543 	|
+| 4'b0101 	| 0.609 	|
+| 4'b0110 	| 0.677 	|
+| 4'b0111 	| 0.741 	|
+| 4'b1000 	| 0.807 	|
+| 4'b1001 	| 0.866 	|
+| 4'b1010 	| 0.924 	|
+| 4'b1011 	| 0.973 	|
+| 4'b1100 	| 1.018 	|
+| 4'b1101 	| 1.056 	|
+| 4'b1110 	| 1.092 	|
+| 4'b1111 	| 1.119 	|
 
 Continuing in this file, we have the instantiation of the Zynq processing core, 'zynq_inst'. This core should not be altered, as it serves a crucial role in the system. It is primarily used to generate a Jitter Attenuated Clock, achieved through the programming of a Silicon Labs Si5324 jitter attenuator chip via the I2C protocol. This programming is performed using Vitis, which allows for efficient management and control of the chip's functionalities.
 
-As we delve further into this file, we come across the generation of the necessary clocks to guide the interface. The frequency of these clocks (60MHz and 200MHz) is pre-defined, during the creation of the IP module (7 Series FPGA's Transceivers Wizard). Changing the parameters defined in the module such as the Line RAte (Gbs), could also require changes in the clock generation process.
+As we delve further into this file, we come across the generation of the necessary clocks to guide the interface. The frequency of these clocks (60MHz and 200MHz) is pre-defined, during the creation of the IP module (7 Series FPGA's Transceivers Wizard). 
 
-### [gtwizard_0_gt_frame_gen.vh](gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_gen.vhd) : 
+
+
+Changing the parameters defined in the module such as the Line RAte (Gbs), could also require changes in the clock generation process.
+
+### [gtwizard_0_gt_frame_gen.vhd](gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_gen.vhd) : 
 
 This is the file where the bitstream is specified. There are two key factors to consider when constructing the bitstream:
 
@@ -123,57 +156,36 @@ WORDS_IN_BRAM : integer    :=   Y
 
 Here, "Y" should be replaced with your desired number of lines.
 
+### [real_constraints.xdc](gtwizard_0_ex.srcs/constrs_1/new/real_constraints.xdc):
 
-- `filename2.vhd`: (Provide a brief explanation of what this file does in your project)
-- `testbench.vhd`: (Provide a brief explanation of what this file does in your project)
-- `constraints.xdc`: (Provide a brief explanation of what this file does in your project)
-- `subdir/filename3.vhd`: (Provide a brief explanation of what this file does in your project)
-- `subdir/filename4.vhd`: (Provide a brief explanation of what this file does in your project)
+This file delineates all constraints pertinent to the input-output connections of the project, encompassing elements like the System Clock and the Si5324 jitter attenuator clock source.
 
-(Repeat this structure for each file or directory in your project.)
+**This file should only be modified if a different FPGA model is being employed.**
+
+
 ## Hardware Requirements
 
-- ZC706 FPGA board
-- (Add any other hardware requirements here)
+- ZC706 FPGA board or equivalent
 
 ## Software Requirements
 
 - Vivado 2021.2
+- Vivado ML Enterprise Edition
+- ... other applicable licenses for the given FPGA model
 
 ## Getting Started
 
 ### Installation
 
 1. Install Vivado 2021.2 from the Xilinx website. Make sure to include the VHDL compiler during the installation process.
-2. (Add any other necessary installation steps here)
+2. Add any of the required licences
 
 ### Setup
 
 1. Clone the repository: `git clone https://github.com/Ch0s3n0ne/gtx_interface.git`
 2. Open Vivado 2021.2 and navigate to the project directory.
 3. Open [gtwizard_0_ex.xpr](gtwizard_0_ex.xpr)
-4. Press generate bitstream 
-
-## Running the Code
-
-(Explain how to run the code here. Include details about how to compile the VHDL, program the FPGA, and use the GTX transceiver interface.)
-
-## Testing
-
-(If you have any tests, explain how to run them here. If you used a specific VHDL test bench, explain how to set it up and run it.)
-
-## Troubleshooting
-
-(If there are common problems that users might encounter, you can list them here along with solutions.)
-
-## Contributing
-
-(Explain how other developers can contribute to your project. If you have any specific guidelines or rules, list them here.)
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
+4. Press generate bitstream
 ## Contact
 
-If you have any questions, feel free to reach out to me at your.email@example.com.
+If you have any questions, feel free to reach out to me at huhu.gocosta@gmail.com.

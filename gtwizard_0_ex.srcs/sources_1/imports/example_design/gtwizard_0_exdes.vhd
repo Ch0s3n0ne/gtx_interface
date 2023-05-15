@@ -74,6 +74,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity gtwizard_0_exdes is
 generic
 (
+    TXDIFFCTRL_CONFIG         : std_logic_vector(3 downto 0) := "0000";
     EXAMPLE_CONFIG_INDEPENDENT_LANES        : integer   := 1;
     EXAMPLE_LANE_WITH_START_CHAR            : integer   := 0;    -- specifies lane with unique start frame ch
     -- EXAMPLE_WORDS_IN_BRAM                   : integer   := 12;  -- specifies amount of data in BRAM
@@ -112,6 +113,7 @@ component gtwizard_0_support
 generic
 (
     -- Simulation attributes
+    TXDIFFCTRL_CONFIG         : std_logic_vector(3 downto 0) := "0000";
     EXAMPLE_SIM_GTRESET_SPEEDUP    : string    := "FALSE";    -- Set to TRUE to speed up sim reset
     STABLE_CLOCK_PERIOD            : integer   := 16 
 );
@@ -503,6 +505,7 @@ q0_clk1_refclk_i                             <= '0';
     gtwizard_0_support_i : gtwizard_0_support
     generic map
     (
+        TXDIFFCTRL_CONFIG               =>      TXDIFFCTRL_CONFIG,
         EXAMPLE_SIM_GTRESET_SPEEDUP     =>      EXAMPLE_SIM_GTRESET_SPEEDUP,
         STABLE_CLOCK_PERIOD             =>      STABLE_CLOCK_PERIOD
     )

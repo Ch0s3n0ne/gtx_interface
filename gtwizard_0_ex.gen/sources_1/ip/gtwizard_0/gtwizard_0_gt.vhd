@@ -73,11 +73,13 @@ entity gtwizard_0_GT is
 generic
 (
     -- Simulation attributes
+    TXDIFFCTRL_CONFIG         : std_logic_vector(3 downto 0) := "0000";
     GT_SIM_GTRESET_SPEEDUP    : string     :=  "FALSE";        -- Set to "TRUE" to speed up sim reset
     RX_DFE_KL_CFG2_IN         : bit_vector :=   X"301148AC";
     SIM_CPLLREFCLK_SEL        : bit_vector :=   "001";
     PMA_RSV_IN                : bit_vector :=  x"00018480";
     PCS_RSVD_ATTR_IN          : bit_vector :=   X"000000000000"
+    
 );
 port 
 (
@@ -724,7 +726,7 @@ begin
         --------------- Transmit Ports - TX Configurable Driver Ports --------------
         TXBUFDIFFCTRL                   =>      "100",
         TXDEEMPH                        =>      tied_to_ground_i,
-        TXDIFFCTRL                      =>      "1111",
+        TXDIFFCTRL                      =>      TXDIFFCTRL_CONFIG,
         TXDIFFPD                        =>      tied_to_ground_i,
         TXINHIBIT                       =>      tied_to_ground_i,
         TXMAINCURSOR                    =>      "0000000",
